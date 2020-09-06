@@ -13,7 +13,7 @@
 
   <div class="container">
     <header class="header">
-      <h1>ToDo List</h1>
+      <h1 class="title">ToDo List</h1>
       <div class="search-container">
         <input class="searchBar" type="text" id="search" placeholder="Search...">
         <i class="fa fa-search"></i>
@@ -21,11 +21,18 @@
     </header>
 
     <div class="filter">
-      <button type="button" class="btns filter-btn" id="new"><i class="fas fa-long-arrow-alt-up"></i> Newest First</button>
-      <button type="button" class="btns filter-btn" id="old"><i class="fas fa-long-arrow-alt-down"></i> Oldest First </button>
-      <button type="button" class="btns filter-btn" id="complete"><i class="fas fa-check"></i> Completed</button>
-      <button type="button" class="btns filter-btn" id="incomplete"><i class="fas fa-times"></i> Incomplete</button>
+      <button type="button" class="filter-btn" id="new"><i class="fas fa-long-arrow-alt-up"></i>&nbsp; Newest First</button>
+      <button type="button" class="filter-btn" id="old"><i class="fas fa-long-arrow-alt-down"></i>&nbsp; Oldest First </button>
+      <button type="button" class="filter-btn" id="complete"><i class="fas fa-check"></i>&nbsp; Completed</button>
+      <button type="button" class="filter-btn" id="incomplete"><i class="fas fa-times"></i>&nbsp; Incomplete</button>
     </div>
+
+    <div class="add-container mb-3">
+      <input type="text" id="addItem" placeholder="Add Item...">
+      <button class="add-button">Add</button>
+    </div>
+
+    
 
     <div class="itemList">
       <ul id="items" class="list-group">
@@ -36,11 +43,11 @@
       </ul>
     </div>
 
-    <form id="addForm" class="form-inline mt-3 add">
-      <input type="text" class="form-control mr-2" id="item" placeholder="Add item...">
-      <input type="submit" class="btn btn-dark" value="Add">
-    </form>
-
+    
+    <!-- <form id="addForm" class="form-inline mt-3 mb-3 add">
+      <input type="text" class="form-control add-item" id="item" placeholder="Add item..." size="68%">
+      <input type="submit" class="add-button" value="Add">
+    </form> -->
 
 
 

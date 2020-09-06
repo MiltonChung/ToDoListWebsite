@@ -14,7 +14,8 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
-  background: var(--background);
+  background: url("background.jfif") no-repeat center;
+  background-size: cover;
   color: black;
 }
 
@@ -74,33 +75,24 @@ img {
   overflow: hidden;
 }
 
-/* Buttons */
-.btns {
-  display: inline-block;
-  color:black;
-  background: var(--blue);
-  padding: 0.54rem 0.2rem;
-  font-size: 1rem;
-  text-align: center;
-  border: none;
-  cursor: pointer;
-  outline: none;
-  width: 100%;
-  border-radius: 10px;
-}
 
-.btns:hover {
-  opacity: .9;
-}
-
+/* TOP */
 .header{
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 1.5fr 1fr;
+}
+
+/* title */
+.title {
+  color: var(--background);
+  margin-top: 3rem;
+  font-size: 5rem;
 }
 
 /* Search bar */
 .search-container {
   width: 100%;
+  margin-top: 3.2rem;
   float: right;
   justify-items: right;
   align-items: right;
@@ -111,13 +103,13 @@ img {
 .search-container input[type="text"]{
   width: 100%;
   padding: 20px;
-  padding-right: 60px;
+  padding-left: 50px;
   box-sizing: border-box;
   background: rgba(0, 0, 0, 0.3);
-  border: 2px solid #fff;
-  border-radius: 10px;
-  font-size: 18px;
-  color: var(--purple);
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  color: var(--background);
   outline: none;
 }
 
@@ -132,8 +124,8 @@ img {
 .fa-search {
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
-  right: 25px;
+  transform: translateY(-80%);
+  left: 15px;
   color: white;
   font-size: 25px;
 }
@@ -141,14 +133,65 @@ img {
 
 /* filters */
 .filter {
-  width: 98%;
+  width: 100%;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 1rem;
-  margin: 1rem 1rem 1rem 0.5rem;
+  margin: 1rem 0 1.5rem 0;
 }
 
+.filter-btn {
+  display: inline-block;
+  color: var(--background);
+  background: var(--blue);
+  padding: 0.54rem 0rem;
+  font-size: 1rem;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  width: 100%;
+  border-radius: 5px;
+  font-weight: 600;
+}
 
-.add {
-  float: right;
+.filter-btn:hover {
+  opacity: .9;
+}
+
+/* Add */
+.add-container {
+  width: 100%;
+  position: relative;
+}
+
+.add-container input[type="text"]{
+  width: 100%;
+  padding: 20px;
+  padding-right: 60px;
+  box-sizing: border-box;
+  background: rgba(0, 0, 0, 0.3);
+  border: 2px solid #fff;
+  border-radius: 5px;
+  font-size: 18px;
+  color: var(--purple);
+  outline: none;
+}
+
+.add-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 25px;
+  color: white;
+  font-size: 25px;
+  background: rgba(0, 0, 0, 0);
+  border: none;
+  cursor: pointer;
+}
+
+/* ItemList */
+.list-group-item {
+  font-size: 1.3rem;
+  background: var(--background)
 }
