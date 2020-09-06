@@ -190,6 +190,10 @@ img {
   cursor: pointer;
 }
 
+.add-button:hover {
+  opacity: 0.4;
+}
+
 /* ItemList */
 .list-group-item {
   font-size: 1.3rem;
