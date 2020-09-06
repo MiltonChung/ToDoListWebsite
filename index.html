@@ -6,10 +6,45 @@
   
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
-
+  <script src="https://kit.fontawesome.com/07e5ac0c0d.js" crossorigin="anonymous"></script>
   <title>ToDo App</title>
 </head>
 <body>
+
+  <div class="container">
+    <header class="header">
+      <h1>ToDo List</h1>
+      <div class="search-container">
+        <input class="searchBar" type="text" id="search" placeholder="Search...">
+        <i class="fa fa-search"></i>
+      </div>
+    </header>
+
+    <div class="filter">
+      <button type="button" class="btns filter-btn" id="new"><i class="fas fa-long-arrow-alt-up"></i> Newest First</button>
+      <button type="button" class="btns filter-btn" id="old"><i class="fas fa-long-arrow-alt-down"></i> Oldest First </button>
+      <button type="button" class="btns filter-btn" id="complete"><i class="fas fa-check"></i> Completed</button>
+      <button type="button" class="btns filter-btn" id="incomplete"><i class="fas fa-times"></i> Incomplete</button>
+    </div>
+
+    <div class="itemList">
+      <ul id="items" class="list-group">
+        <li class="list-group-item mb-1">Item 1 <button class="btn btn-danger btn-sm float-right delete">X</button></li>
+        <li class="list-group-item mb-1">Item 2 <button class="btn btn-danger btn-sm float-right delete">X</button></li>
+        <li class="list-group-item mb-1">Item 3 <button class="btn btn-danger btn-sm float-right delete">X</button></li>
+        <li class="list-group-item mb-1">Item 4 <button class="btn btn-danger btn-sm float-right delete">X</button></li>
+      </ul>
+    </div>
+
+    <form id="addForm" class="form-inline mt-3 add">
+      <input type="text" class="form-control mr-2" id="item" placeholder="Add item...">
+      <input type="submit" class="btn btn-dark" value="Add">
+    </form>
+
+
+
+
+  </div>
   
   <script src="main.js"></script>
 </body>
