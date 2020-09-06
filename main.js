@@ -14,9 +14,16 @@ itemList.addEventListener('click', deleteItem);
 // Search for items
 search.addEventListener('keyup', searchItem);
 
+// Filters:
+newFilter.addEventListener('click', sortNew);
+oldFilter.addEventListener('click', sortOld);
+completedFilter.addEventListener('click', sortDone);
+incompleteFilter.addEventListener('click', sortNotDone);
+
+
+
 function addToList(e){
   e.preventDefault();
-  
   
   var newItem = document.getElementById('addItem').value;
   if(newItem == ''){
@@ -68,4 +75,24 @@ function searchItem(e){
       item.style.display = 'none';
     }
   });
+}
+
+
+function sortNew(e){
+  console.log(1)
+}
+
+
+function sortOld(e){
+  console.log(1)
+}
+
+
+function sortDone(e){
+  console.log(1)
+}
+
+
+function sortNotDone(e){
+  console.log(1)
 }
