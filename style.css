@@ -159,6 +159,11 @@ img {
   opacity: .9;
 }
 
+.filter-selected {
+  color: var(--purple);
+  background: var(--background);
+}
+
 /* Add */
 .add-container {
   width: 100%;
