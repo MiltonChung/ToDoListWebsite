@@ -41,8 +41,6 @@ function addToList(e){
 
     // Clear input field after adding
     document.getElementById('addItem').value = '';
-
-    // localStorage.setItem('1', newItem);
   }
 }
 
